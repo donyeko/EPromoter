@@ -30,3 +30,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
+
+    # Step Summary
+    - name: Adding markdown
+      run: echo '### Hello ${{ inputs.name }} 🚀' >> $GITHUB_STEP_SUMMARY
